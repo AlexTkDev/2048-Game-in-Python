@@ -22,15 +22,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install pylint
-
-      - name: Create .pylintrc
-        run: |
-          echo "[MESSAGES CONTROL]" > .pylintrc
-          echo "disable=missing-docstring,invalid-name,too-few-public-methods" >> .pylintrc
-          echo "" >> .pylintrc
-          echo "[FORMAT]" >> .pylintrc
-          echo "max-line-length=100" >> .pylintrc
+          pip install pylint pygame
 
       - name: Run pylint
         run: |
