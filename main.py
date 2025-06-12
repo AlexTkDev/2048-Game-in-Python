@@ -1,10 +1,11 @@
-import pygame
 import random
 import json
 import os
-from typing import List, Tuple, Optional
+from typing import List, Tuple
 from enum import Enum
 from dataclasses import dataclass
+import pygame
+
 
 # Game constants
 GRID_SIZE = 4
