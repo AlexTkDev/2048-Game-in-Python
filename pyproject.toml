@@ -1,0 +1,5 @@
+[tool.isort]
+profile = "black"
+known_standard_library = ["os", "sys", "json", "random", "enum", "dataclasses", "typing"]
+known_third_party = ["pygame"]
+line_length = 99
